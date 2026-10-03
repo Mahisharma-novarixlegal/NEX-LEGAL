@@ -23,7 +23,7 @@ window.NEX = {
      visitor's email app with the message filled in instead.
      ------------------------------------------------------------------- */
   settings: {
-    web3formsKey: "PASTE-YOUR-WEB3FORMS-ACCESS-KEY-HERE",
+    web3formsKey: "71b662c0-79e2-43ad-b124-7a57ab277d36",
     officeEmail: "office@nexlegal.in",
     phoneDisplay: "+91 70424 18698",
     phoneLink: "+917042418698",
@@ -33,8 +33,9 @@ window.NEX = {
   /* -------------------------------------------------------------------
      2. PARTNERS
      photo: leave "" to show the monogram, or put a file name such as
-     "assets/mahi.jpg" after uploading the photo into the assets folder.
+     "mahi.jpg" after uploading the photo to the repository.
      enrolment: leave "" to hide the line.
+     email: leave "" to hide it; add e.g. "partner.ms@nexlegal.in" once that mailbox exists.
      ------------------------------------------------------------------- */
   partners: [
     {
@@ -42,7 +43,7 @@ window.NEX = {
       role: "Partner",
       initials: "MS",
       photo: "",
-      email: "partner.ms@nexlegal.in",
+      email: "",
       enrolment: "Bar Council of Delhi, D/4283/2024",
       bio: "Mahi is an advocate enrolled with the Bar Council of Delhi and a member of the Delhi High Court Bar Association. Her practice spans the Supreme Court, the High Court of Delhi, the NCLT and NCLAT, the Debts Recovery Tribunals, the family courts and the district courts, across civil, criminal, commercial, regulatory, insolvency, arbitration, intellectual property and real estate litigation. She drafts extensively for matters before the Supreme Court."
     },
@@ -51,7 +52,7 @@ window.NEX = {
       role: "Partner",
       initials: "KS",
       photo: "",
-      email: "partner.ks@nexlegal.in",
+      email: "",
       enrolment: "",
       bio: "Kunal co-leads the firm and shares responsibility for its litigation and advisory mandates, client relationships and the supervision of the working teams that support each engagement."
     }
