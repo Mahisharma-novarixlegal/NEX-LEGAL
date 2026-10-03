@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nex Legal | Advocates, New Delhi</title>
+<meta name="description" content="Nex Legal is a litigation and advisory firm in New Delhi, led by partners Kunal Singh and Mahi Sharma, appearing before the Supreme Court, the High Court of Delhi, NCLT, NCLAT, DRT and the courts of Delhi NCR.">
+<meta name="theme-color" content="#3A0A0B">
+<link rel="canonical" href="https://nexlegal.in/">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nex Legal | Law. Strategy. Resolution.">
+<meta property="og:description" content="Litigation and advisory firm in New Delhi. Supreme Court, High Court of Delhi, tribunals and the courts of Delhi NCR.">
+<meta property="og:url" content="https://nexlegal.in/">
+<meta property="og:image" content="https://nexlegal.in/assets/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* Layout: dark maroon chambers (hero, practice, videos, footer) alternating with ivory reading rooms; gold carries the brand. */
+:root{
+  --maroon:#3A0A0B; --maroon-deep:#260506; --wine:#4E1213; --maroon-line:rgba(212,170,110,.22);
+  --gold:#C99A5B; --gold-light:#E6C48E; --gold-ink:#8A6332;
+  --ivory:#FBF7F1; --paper:#F4EDE3; --ink:#241A19; --ink-soft:#5E5250; --rule:#E2D6C6;
+  --on-dark:#F3E9DC; --on-dark-soft:#C9B8A6;
+  --display:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
+  --body:"Jost","Futura","Century Gothic","Segoe UI",sans-serif;
+  --wrap:1180px; --gutter:clamp(16px,4vw,40px);
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--body);font-weight:400;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);font-weight:500;line-height:1.15;margin:0;text-wrap:balance}
+p{margin:0}
+[hidden]{display:none!important}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;font-weight:500;color:var(--gold-ink)}
+.dark .eyebrow{color:var(--gold)}
+.section{padding-block:clamp(72px,10vw,120px)}
+.section-head{display:grid;gap:18px;max-width:720px;margin-bottom:clamp(40px,6vw,64px)}
+.section-head h2{font-size:clamp(34px,4.6vw,52px)}
+.section-head p{color:var(--ink-soft);font-size:18px;max-width:62ch}
+.dark{background:var(--maroon);color:var(--on-dark)}
+.dark .section-head p{color:var(--on-dark-soft)}
+.rule-gold{width:72px;height:1px;background:var(--gold);border:0;margin:0}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 28px;font:500 13px/1 var(--body);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);cursor:pointer;transition:background .25s,color .25s}
+.btn-gold{background:var(--gold);color:var(--maroon-deep)}
+.btn-gold:hover{background:var(--gold-light);border-color:var(--gold-light)}
+.btn-line{background:transparent;color:var(--gold-light)}
+.btn-line:hover{background:rgba(201,154,91,.12)}
+.btn-dark{background:var(--maroon);color:var(--gold-light);border-color:var(--maroon)}
+.btn-dark:hover{background:var(--wine)}
+
+/* ---------- Header ---------- */
+.site-header{position:fixed;inset:0 0 auto 0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .3s,box-shadow .3s}
+.site-header.solid{background:rgba(38,5,6,.96);box-shadow:0 1px 0 var(--maroon-line);backdrop-filter:blur(8px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:28px;height:76px;max-width:1280px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--gold-light)}
+.brand img{width:40px;height:auto}
+.brand span{font-family:var(--display);font-size:22px;letter-spacing:.3em;font-weight:500;white-space:nowrap}
+.nav-links{display:flex;gap:clamp(14px,1.8vw,28px);list-style:none;margin:0;padding:0}
+.nav-links a{white-space:nowrap;color:var(--on-dark);text-decoration:none;font-size:13px;letter-spacing:.16em;text-transform:uppercase;padding:8px 0;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+.nav-links a:hover{color:var(--gold-light);border-color:var(--gold)}
+.nav-cta{min-height:42px;padding:0 20px}
+.menu-btn{display:none;background:none;border:1px solid var(--maroon-line);width:46px;height:46px;color:var(--gold-light);cursor:pointer}
+.menu-btn svg{width:22px;height:22px}
+@media (max-width:1180px){
+  .nav-links,.nav .nav-cta{display:none}
+  .menu-btn{display:inline-flex;align-items:center;justify-content:center}
+  .site-header.open{background:var(--maroon-deep)}
+  .site-header.open .nav-links{display:flex;flex-direction:column;position:absolute;top:calc(76px + env(safe-area-inset-top,0px));left:0;right:0;background:var(--maroon-deep);padding:8px var(--gutter) 28px;gap:0;border-bottom:1px solid var(--maroon-line)}
+  .site-header.open .nav-links a{display:block;padding:16px 0;border-bottom:1px solid var(--maroon-line);font-size:14px}
+}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;background:radial-gradient(ellipse 80% 70% at 50% 35%,#55100F 0%,var(--maroon) 45%,var(--maroon-deep) 100%);color:var(--on-dark);text-align:center;padding:calc(150px + env(safe-area-inset-top,0px)) 0 clamp(80px,10vw,120px);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(0,0,0,.05) 0 1px,transparent 1px 3px);pointer-events:none}
+.hero-inner{position:relative;display:grid;justify-items:center;gap:22px}
+.hero-mark{width:clamp(110px,14vw,160px);filter:drop-shadow(0 10px 18px rgba(0,0,0,.45));animation:rise 1.1s ease both}
+.hero h1{font-size:clamp(46px,9vw,108px);letter-spacing:.2em;padding-left:.2em;color:var(--gold-light);font-weight:500;line-height:1;background:linear-gradient(180deg,#F1D6A5 0%,#D3A766 55%,#B98846 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:rise 1.1s .12s ease both}
+.hero .tagline{font-size:clamp(12px,1.6vw,17px);letter-spacing:.42em;padding-left:.42em;text-transform:uppercase;color:var(--gold);animation:rise 1.1s .22s ease both}
+.hero .rule-gold{animation:rise 1.1s .3s ease both}
+.hero .lede{font-family:var(--display);font-style:italic;font-size:clamp(20px,2.4vw,26px);color:var(--on-dark);max-width:640px;line-height:1.45;animation:rise 1.1s .36s ease both}
+.hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:10px;animation:rise 1.1s .44s ease both}
+.hero-courts{position:relative;margin-top:clamp(56px,8vw,88px);border-top:1px solid var(--maroon-line);padding-top:26px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--on-dark-soft)}
+@keyframes rise{from{opacity:.001;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* ---------- Firm ---------- */
+.firm-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,7vw,96px);align-items:start}
+.firm-copy{display:grid;gap:22px;min-width:0}
+.firm-copy h2{font-size:clamp(34px,4.6vw,52px)}
+.firm-copy p{color:var(--ink-soft);max-width:62ch}
+.firm-copy p.lead{font-family:var(--display);font-size:clamp(22px,2.4vw,27px);line-height:1.45;color:var(--ink)}
+.pillars{display:grid;gap:0;border-top:1px solid var(--rule)}
+.pillar{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:28px 0;border-bottom:1px solid var(--rule)}
+.pillar h3{font-size:30px;color:var(--maroon)}
+.pillar h3 em{font-style:normal;color:var(--gold-ink)}
+.pillar p{color:var(--ink-soft);font-size:16px}
+@media (max-width:860px){.firm-grid{grid-template-columns:1fr}.pillar{grid-template-columns:1fr;gap:8px}}
+
+/* ---------- Practice ---------- */
+.practice-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--maroon-line);border-left:1px solid var(--maroon-line)}
+.practice{padding:34px 30px 36px;border-right:1px solid var(--maroon-line);border-bottom:1px solid var(--maroon-line);display:grid;gap:12px;align-content:start;transition:background .3s}
+.practice:hover{background:rgba(201,154,91,.06)}
+.practice h3{font-size:25px;color:var(--gold-light)}
+.practice p{font-size:15.5px;color:var(--on-dark-soft);line-height:1.6}
+@media (max-width:960px){.practice-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.practice-grid{grid-template-columns:1fr}.practice{padding:28px 22px}}
+
+/* ---------- Forums ---------- */
+.forums{background:var(--paper)}
+.forum-list{display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(24px,4vw,56px);list-style:none;padding:0;margin:0}
+.forum-list li{padding:18px 0;border-bottom:1px solid var(--rule);display:flex;gap:14px;align-items:baseline;font-size:16.5px}
+.forum-list li::before{content:"";flex:none;width:7px;height:7px;transform:rotate(45deg) translateY(-2px);background:var(--gold)}
+@media (max-width:860px){.forum-list{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.forum-list{grid-template-columns:1fr}}
+
+/* ---------- Partners ---------- */
+.partner-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(28px,4vw,48px)}
+.partner{display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:start;min-width:0}
+.portrait{aspect-ratio:4/5;width:100%;max-width:100%;background:linear-gradient(160deg,var(--wine),var(--maroon-deep));display:grid;place-items:center;overflow:hidden;position:relative}
+.portrait::after{content:"";position:absolute;inset:8px;border:1px solid rgba(201,154,91,.35);pointer-events:none}
+.portrait span{font-family:var(--display);font-size:46px;letter-spacing:.12em;color:var(--gold-light)}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.partner-body{display:grid;gap:10px;min-width:0}
+.partner-body h3{font-size:32px;color:var(--maroon)}
+.partner-role{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-ink)}
+.partner-body p{color:var(--ink-soft);font-size:16px}
+.partner-meta{font-size:14px;color:var(--ink-soft);display:grid;justify-items:start;gap:2px;margin-top:4px}
+.partner-meta a{color:var(--maroon);text-decoration:none;border-bottom:1px solid var(--rule);overflow-wrap:anywhere}
+.team-note{margin-top:clamp(40px,5vw,56px);padding-top:28px;border-top:1px solid var(--rule);color:var(--ink-soft);max-width:80ch;font-size:16px}
+@media (max-width:960px){.partner-grid{grid-template-columns:1fr}}
+@media (max-width:520px){.partner{grid-template-columns:1fr}.portrait{max-width:200px}}
+
+/* ---------- Insights ---------- */
+.insights{background:var(--ivory)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
+.chip{min-height:40px;padding:0 18px;border:1px solid var(--rule);background:transparent;font:500 12px var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--maroon);border-color:var(--maroon);color:var(--gold-light)}
+.article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,32px)}
+.card{display:grid;grid-template-rows:auto auto 1fr auto;gap:14px;padding:30px 28px;background:#fff;border:1px solid var(--rule);text-align:left;font:inherit;color:inherit;cursor:pointer;transition:border-color .25s,transform .25s;min-width:0}
+.card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.card-meta{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink)}
+.card-meta .type{color:var(--maroon);font-weight:500}
+.card h3{font-size:25px;color:var(--ink)}
+.card p{font-size:15.5px;color:var(--ink-soft)}
+.card .more{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--maroon);font-weight:500}
+@media (max-width:960px){.article-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.article-grid{grid-template-columns:1fr}}
+
+/* ---------- Reader overlay ---------- */
+.reader{position:fixed;inset:0;z-index:80;background:rgba(20,4,4,.6);display:flex;justify-content:center;overflow-y:auto;padding:calc(24px + env(safe-area-inset-top,0px)) 12px 24px}
+.reader-panel{background:var(--ivory);width:100%;max-width:780px;margin:auto 0;position:relative;padding:clamp(28px,6vw,64px) clamp(20px,6vw,72px)}
+.reader-close{position:absolute;top:14px;right:14px;width:44px;height:44px;border:1px solid var(--rule);background:var(--ivory);cursor:pointer;color:var(--ink);font-size:22px;line-height:1}
+.reader-panel h2{font-size:clamp(30px,4.4vw,44px);color:var(--maroon);margin:14px 0 18px}
+.reader-byline{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);padding-bottom:22px;border-bottom:1px solid var(--rule);margin-bottom:28px}
+.prose{display:grid;gap:18px;font-size:17.5px;color:var(--ink)}
+.prose h3{font-size:25px;color:var(--maroon);margin-top:12px}
+.prose ul{margin:0;padding-left:1.2em;display:grid;gap:8px}
+.prose a{color:var(--maroon)}
+.reader-foot{margin-top:36px;padding-top:22px;border-top:1px solid var(--rule);font-size:14px;color:var(--ink-soft);display:grid;gap:14px}
+.share-row{display:flex;flex-wrap:wrap;gap:10px}
+.share-row a,.share-row button{min-height:40px;padding:0 16px;display:inline-flex;align-items:center;border:1px solid var(--rule);background:transparent;font:500 12px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--maroon);text-decoration:none;cursor:pointer}
+
+/* ---------- Videos ---------- */
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,32px)}
+.video{display:grid;gap:14px;min-width:0}
+.video-frame{position:relative;aspect-ratio:16/9;max-width:100%;background:var(--maroon-deep);border:1px solid var(--maroon-line);overflow:hidden}
+.video-frame button{all:unset;cursor:pointer;position:absolute;inset:0;display:grid;place-items:center}
+.video-frame img{width:100%;height:100%;object-fit:cover;opacity:.85;transition:opacity .25s}
+.video-frame button:hover img{opacity:1}
+.video-frame .play{position:absolute;width:64px;height:64px;border-radius:50%;background:rgba(38,5,6,.8);border:1px solid var(--gold);display:grid;place-items:center}
+.video-frame .play svg{width:22px;height:22px;fill:var(--gold-light);margin-left:4px}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video h3{font-size:23px;color:var(--gold-light)}
+.video p{font-size:15px;color:var(--on-dark-soft)}
+.video-empty{border:1px solid var(--maroon-line);padding:clamp(36px,6vw,64px);display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center}
+.video-empty .play-mark{width:84px;height:84px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center}
+.video-empty .play-mark svg{width:28px;height:28px;fill:var(--gold);margin-left:5px}
+.video-empty h3{font-size:30px;color:var(--gold-light);margin-bottom:8px}
+.video-empty p{color:var(--on-dark-soft);max-width:60ch}
+@media (max-width:960px){.video-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.video-grid{grid-template-columns:1fr}.video-empty{grid-template-columns:1fr}}
+
+/* ---------- Guides ---------- */
+.guides{background:var(--paper)}
+.guide-list{display:grid;gap:0;border-top:1px solid var(--rule)}
+.guide{border-bottom:1px solid var(--rule)}
+.guide summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:26px 0}
+.guide summary::-webkit-details-marker{display:none}
+.guide summary h3{font-size:clamp(23px,2.6vw,29px);color:var(--maroon)}
+.guide summary .law{display:block;font-family:var(--body);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-ink);margin-top:6px}
+.guide .toggle{width:40px;height:40px;border:1px solid var(--rule);display:grid;place-items:center;color:var(--maroon);transition:transform .25s}
+.guide[open] .toggle{transform:rotate(45deg)}
+.guide ol{margin:0 0 30px;padding:0;list-style:none;counter-reset:step;display:grid;gap:14px;max-width:78ch}
+.guide ol li{counter-increment:step;display:grid;grid-template-columns:42px 1fr;gap:12px;color:var(--ink-soft);font-size:16.5px}
+.guide ol li::before{content:counter(step);font-family:var(--display);font-size:24px;color:var(--gold-ink);line-height:1.1}
+.guide-note{margin-top:28px;font-size:14px;color:var(--ink-soft);font-style:italic}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,6vw,80px)}
+.offices{display:grid;gap:30px;align-content:start;min-width:0}
+.office h3{font-size:14px;font-family:var(--body);letter-spacing:.26em;text-transform:uppercase;color:var(--gold-ink);font-weight:500;margin-bottom:8px}
+.office address{font-style:normal;font-family:var(--display);font-size:24px;line-height:1.35;color:var(--ink)}
+.office a.dir{display:inline-block;margin-top:8px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--maroon);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reach{display:grid;gap:10px;padding-top:26px;border-top:1px solid var(--rule)}
+.reach a{display:flex;gap:14px;align-items:center;text-decoration:none;color:var(--ink);font-size:17px;overflow-wrap:anywhere}
+.reach svg{flex:none;width:20px;height:20px;stroke:var(--gold-ink);fill:none;stroke-width:1.6}
+.form{display:grid;gap:18px;background:#fff;border:1px solid var(--rule);padding:clamp(24px,4vw,44px);min-width:0}
+.form h3{font-size:30px;color:var(--maroon)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:grid;gap:7px;min-width:0}
+.field label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);font-weight:500}
+.field input,.field select,.field textarea{width:100%;min-height:48px;padding:12px 14px;border:1px solid var(--rule);background:var(--ivory);font:16px var(--body);color:var(--ink);border-radius:0;transition:border-color .2s}
+.field textarea{min-height:130px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold-ink);background:#fff}
+.consent{display:grid;grid-template-columns:22px 1fr;gap:12px;font-size:14px;color:var(--ink-soft);align-items:start}
+.consent input{width:18px;height:18px;margin-top:3px;accent-color:var(--maroon)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-status{font-size:15px;padding:14px 16px;border-left:3px solid var(--gold)}
+.form-status.ok{background:#F1F6EE;border-color:#4C7A3C;color:#2C4A22}
+.form-status.err{background:#FBEDEC;border-color:#A2302A;color:#6E1D19}
+.form .btn{justify-self:start}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.form-row{grid-template-columns:1fr}}
+
+/* ---------- Careers ---------- */
+.careers{background:var(--paper)}
+.careers-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,6vw,80px);align-items:start}
+.careers-grid .section-head{margin-bottom:0}
+@media (max-width:900px){.careers-grid{grid-template-columns:1fr}}
+
+/* ---------- Footer ---------- */
+.footer{background:var(--maroon-deep);color:var(--on-dark-soft);padding-block:72px 40px;font-size:15px}
+.footer-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid var(--maroon-line)}
+.footer .brand{margin-bottom:18px}
+.footer h4{font-family:var(--body);font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:16px}
+.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.footer a{color:var(--on-dark-soft);text-decoration:none;overflow-wrap:anywhere}
+.footer a:hover{color:var(--gold-light)}
+.footer-link{all:unset;cursor:pointer;color:var(--on-dark-soft)}
+.footer-link:hover{color:var(--gold-light)}
+.footer-bottom{padding-top:28px;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;font-size:13px}
+.footer-bottom p{max-width:80ch}
+@media (max-width:900px){.footer-top{grid-template-columns:1fr 1fr}}
+@media (max-width:540px){.footer-top{grid-template-columns:1fr}}
+
+/* ---------- Disclaimer & policy modals ---------- */
+.modal{position:fixed;inset:0;z-index:100;background:rgba(20,4,4,.82);display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto}
+.modal-panel{background:var(--ivory);max-width:640px;width:100%;max-height:calc(100vh - 32px);overflow-y:auto;padding:clamp(28px,5vw,48px);border-top:3px solid var(--gold);position:relative}
+.modal-panel .mark{width:52px;margin-bottom:18px}
+.modal-panel h2{font-size:clamp(28px,4vw,36px);color:var(--maroon);margin-bottom:16px}
+.modal-panel .prose{font-size:15.5px;color:var(--ink-soft);gap:14px}
+.modal-panel .prose h3{font-size:21px}
+.modal-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.modal-actions .btn-plain{background:transparent;color:var(--ink-soft);border-color:var(--rule)}
+
+.wa-float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;width:56px;height:56px;border-radius:50%;background:var(--maroon);border:1px solid var(--gold);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.wa-float svg{width:26px;height:26px;fill:var(--gold-light)}
+</style>
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Nex Legal home">
+      <img src="assets/nex-monogram.png" alt="" width="40" height="34">
+      <span>NEX LEGAL</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#firm">Firm</a></li>
+      <li><a href="#practice">Practice</a></li>
+      <li><a href="#partners">Partners</a></li>
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#guides">Guides</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-line nav-cta" href="#contact">Consult</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <img class="hero-mark" src="assets/nex-monogram.png" alt="Nex Legal monogram" width="160" height="137">
+      <h1>NEX LEGAL</h1>
+      <p class="tagline">Law. Strategy. Resolution.</p>
+      <hr class="rule-gold">
+      <p class="lede">A litigation and advisory firm in New Delhi, led by its partners and present every day before the Supreme Court, the High Court of Delhi and the national tribunals.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#contact">Speak to a Partner</a>
+        <a class="btn btn-line" href="#practice">Our Practice</a>
+      </div>
+      <div class="hero-courts" aria-label="Forums">
+        <span>Supreme Court of India</span><span>High Court of Delhi</span><span>NCLT &amp; NCLAT</span><span>DRT &amp; DRAT</span><span>Consumer Commissions</span><span>Courts of Delhi NCR</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIRM -->
+  <section class="section" id="firm">
+    <div class="wrap firm-grid">
+      <div class="firm-copy">
+        <p class="eyebrow">The Firm</p>
+        <h2>Where law meets strategy.</h2>
+        <p class="lead">Nex Legal is led by its partners, Kunal Singh and Mahi Sharma. A partner reads every file, settles every strategy and remains answerable for every result.</p>
+        <p>The firm operates from its head office in Defence Colony and its branch office in Greater Kailash I, both in South Delhi and within easy reach of the Supreme Court, the High Court of Delhi, the NCLT and NCLAT benches, the Debts Recovery Tribunals and the district courts at Saket and Patiala House. That lets us attend urgent mentions, inspect records and file at short notice.</p>
+        <p>Our partners and associates have acted for public institutions, regulators, lenders and liquidators, and for private parties in sensitive civil, family and criminal matters. Working on both sides helps us anticipate how the other side and the bench will view a case. In matters of significance we brief senior counsel of standing, always in consultation with the client.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><h3><em>Law.</em></h3><p>We read the statute, the record and the precedent closely, and give advice in plain words that a client can act on.</p></div>
+        <div class="pillar"><h3><em>Strategy.</em></h3><p>We build the case around what the client actually needs: the right forum, the right relief and the right moment to press or to settle.</p></div>
+        <div class="pillar"><h3><em>Resolution.</em></h3><p>We measure ourselves by the outcome we secure, not by the length of the proceedings we conduct.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICE -->
+  <section class="section dark" id="practice">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Practice Areas</p>
+        <h2>Counsel across the courts and tribunals of New Delhi</h2>
+        <p>Each area may be engaged on its own or as part of a wider mandate, with the same partner supervision throughout.</p>
+      </div>
+      <div class="practice-grid">
+        <article class="practice"><h3>Supreme Court &amp; Appellate</h3><p>Special leave petitions, civil and criminal appeals, transfer petitions and statutory appeals from tribunals such as the NCLAT and APTEL.</p></article>
+        <article class="practice"><h3>Commercial Litigation &amp; Arbitration</h3><p>Commercial suits, summary suits and injunctions; institutional and ad hoc arbitration, interim measures, challenges to awards and enforcement.</p></article>
+        <article class="practice"><h3>Recovery, Enforcement &amp; Insolvency</h3><p>SARFAESI, DRT and DRAT proceedings, Section 138 complaints, execution of decrees, and creditor and debtor work before the NCLT and NCLAT.</p></article>
+        <article class="practice"><h3>Consumer Protection</h3><p>Complaints and defence before the District, State and National Consumer Commissions, including product liability claims.</p></article>
+        <article class="practice"><h3>Real Estate &amp; RERA</h3><p>RERA complaints and appeals, title investigation, conveyancing, land and tenancy litigation, and development and construction disputes.</p></article>
+        <article class="practice"><h3>Intellectual Property</h3><p>Trade mark and copyright enforcement, infringement and passing off suits, local commissions, and action against online infringement.</p></article>
+        <article class="practice"><h3>Competition &amp; Regulatory</h3><p>Proceedings before the Competition Commission of India and sectoral regulators, and writ challenges to regulations and executive action.</p></article>
+        <article class="practice"><h3>Criminal &amp; White Collar</h3><p>Anticipatory and regular bail, quashing petitions, complaints for cheating and criminal breach of trust, and trial representation.</p></article>
+        <article class="practice"><h3>Family &amp; Matrimonial</h3><p>Divorce, maintenance, custody, domestic violence proceedings, stridhan recovery and transfer petitions before the Supreme Court.</p></article>
+        <article class="practice"><h3>Employment &amp; Service</h3><p>Labour court and High Court proceedings on termination, wages and gratuity, and service matters including compassionate appointment.</p></article>
+        <article class="practice"><h3>Technology &amp; Data Protection</h3><p>Advice on the Digital Personal Data Protection Act, 2023, technology contracts and emerging questions of AI and the law.</p></article>
+        <article class="practice"><h3>Advisory &amp; Pre-Litigation</h3><p>Legal opinions, contract review, legal notices and replies, and pre-institution mediation under the Commercial Courts Act.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORUMS -->
+  <section class="section forums" id="forums">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Forums</p>
+        <h2>Where we appear</h2>
+        <p>Outside the NCR, we coordinate with correspondent counsel while remaining responsible for strategy, drafting and reporting.</p>
+      </div>
+      <ul class="forum-list">
+        <li>Supreme Court of India</li>
+        <li>High Court of Delhi</li>
+        <li>NCLT, New Delhi &amp; NCLAT</li>
+        <li>Debts Recovery Tribunals &amp; DRAT</li>
+        <li>National &amp; State Consumer Commissions</li>
+        <li>District Consumer Commissions</li>
+        <li>Delhi RERA &amp; Appellate Tribunal</li>
+        <li>Competition Commission of India</li>
+        <li>Commercial Courts</li>
+        <li>Family Courts</li>
+        <li>District Courts of Delhi</li>
+        <li>Courts at Gurugram, Faridabad, Noida &amp; Ghaziabad</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="section" id="partners">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Partners</p>
+        <h2>The people answerable for your matter</h2>
+      </div>
+      <div class="partner-grid" id="partnerGrid"></div>
+      <p class="team-note">The partners are supported by associates, research staff and paralegals who handle drafting, filing, registry work and record management.</p>
+    </div>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section class="section insights" id="insights" style="background:var(--paper)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Insights</p>
+        <h2>Articles and commentary</h2>
+        <p>Notes on the law as it affects our clients, and our view on judgments and developments worth knowing about.</p>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filter articles"></div>
+      <div class="article-grid" id="articleGrid"></div>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="section dark" id="videos">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Videos</p>
+        <h2>The law, explained</h2>
+        <p>Short explainers from the partners on questions clients ask us most often.</p>
+      </div>
+      <div id="videoArea"></div>
+    </div>
+  </section>
+
+  <!-- GUIDES -->
+  <section class="section guides" id="guides">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Legal Guides</p>
+        <h2>Know the procedure</h2>
+        <p>Step-by-step outlines of common legal processes, written so that anyone can follow them.</p>
+      </div>
+      <div class="guide-list" id="guideList"></div>
+      <p class="guide-note">These guides give general information about the law and are not legal advice. Procedures and limits change; speak to counsel about your own case.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Contact</p>
+        <h2>Speak to a partner</h2>
+        <p>Tell us briefly about your matter. A partner will respond within one working day. Please do not send confidential documents through this form.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="offices">
+          <div class="office">
+            <h3>Head Office</h3>
+            <address>A-62, First Floor, Defence Colony,<br>New Delhi 110024</address>
+            <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=A-62+Defence+Colony+New+Delhi+110024" target="_blank" rel="noopener">Get directions</a>
+          </div>
+          <div class="office">
+            <h3>Branch Office</h3>
+            <address>S-352, Third Floor, S Block,<br>Greater Kailash I, New Delhi 110048</address>
+            <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=S-352+Greater+Kailash+1+New+Delhi+110048" target="_blank" rel="noopener">Get directions</a>
+          </div>
+          <div class="reach">
+            <a href="tel:+917042418698" data-phone-link><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-phone>+91 70424 18698</span></a>
+            <a href="mailto:office@nexlegal.in"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>office@nexlegal.in</a>
+            <a href="https://wa.me/917042418698" target="_blank" rel="noopener" data-wa-link><svg viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>Message us on WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="form" id="contactForm" novalidate data-subject="New enquiry from nexlegal.in">
+          <h3>Send an enquiry</h3>
+          <div class="form-row">
+            <div class="field"><label for="c-name">Full name</label><input id="c-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="c-area">Nature of matter</label>
+              <select id="c-area" name="matter_type">
+                <option>Civil or commercial dispute</option>
+                <option>Criminal matter or bail</option>
+                <option>Family or matrimonial</option>
+                <option>Property, real estate or RERA</option>
+                <option>Banking, recovery or insolvency</option>
+                <option>Consumer complaint</option>
+                <option>Supreme Court or High Court appeal</option>
+                <option>Intellectual property</option>
+                <option>Employment or service</option>
+                <option>Corporate advisory or retainership</option>
+                <option>Something else</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="c-office">Preferred office</label>
+            <select id="c-office" name="preferred_office">
+              <option>Defence Colony (Head Office)</option>
+              <option>Greater Kailash I (Branch Office)</option>
+              <option>Video call</option>
+            </select>
+          </div>
+          <div class="field"><label for="c-msg">Briefly describe your matter</label><textarea id="c-msg" name="message" required></textarea></div>
+          <label class="consent" for="c-consent"><input type="checkbox" id="c-consent" name="consent" value="Yes" required><span>I agree that Nex Legal may use these details to respond to my enquiry, as set out in the <button type="button" class="footer-link" style="color:var(--maroon);text-decoration:underline" data-open="privacy">privacy policy</button>. Sending this form does not create an advocate-client relationship.</span></label>
+          <div class="hp" aria-hidden="true"><label for="c-bot">Leave empty</label><input id="c-bot" name="botcheck" tabindex="-1" autocomplete="off"></div>
+          <div class="form-status" role="status" hidden></div>
+          <button class="btn btn-dark" type="submit">Send enquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREERS -->
+  <section class="section careers" id="careers">
+    <div class="wrap careers-grid">
+      <div class="section-head">
+        <p class="eyebrow">Careers &amp; Internships</p>
+        <h2>Train with us</h2>
+        <p>We take a small number of law students and young advocates each term. Interns work on live briefs, attend court with the partners and learn drafting from the ground up.</p>
+        <p>Share a link to your CV (Google Drive or similar, with access open) in the form, or email it to office@nexlegal.in.</p>
+      </div>
+      <form class="form" id="careerForm" novalidate data-subject="Internship or job application via nexlegal.in">
+        <h3>Apply</h3>
+        <div class="form-row">
+          <div class="field"><label for="k-name">Full name</label><input id="k-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="k-email">Email</label><input id="k-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="k-phone">Phone</label><input id="k-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="k-role">Applying for</label>
+            <select id="k-role" name="applying_for"><option>Internship</option><option>Associate position</option><option>Paralegal or clerk</option></select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="k-college">College or current firm</label><input id="k-college" name="college_or_firm"></div>
+          <div class="field"><label for="k-period">Year of study or period available</label><input id="k-period" name="year_or_period"></div>
+        </div>
+        <div class="field"><label for="k-cv">Link to CV</label><input id="k-cv" name="cv_link" type="url" placeholder="https://"></div>
+        <div class="field"><label for="k-msg">Anything you would like us to know</label><textarea id="k-msg" name="message"></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="k-bot">Leave empty</label><input id="k-bot" name="botcheck" tabindex="-1" autocomplete="off"></div>
+        <div class="form-status" role="status" hidden></div>
+        <button class="btn btn-dark" type="submit">Submit application</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="#top"><img src="assets/nex-monogram.png" alt="" width="40" height="34"><span>NEX LEGAL</span></a>
+        <p>Law. Strategy. Resolution.<br>Partners: Kunal Singh &middot; Mahi Sharma</p>
+      </div>
+      <div>
+        <h4>Offices</h4>
+        <ul>
+          <li>A-62, First Floor, Defence Colony, New Delhi 110024</li>
+          <li>S-352, Third Floor, S Block, Greater Kailash I, New Delhi 110048</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+917042418698" data-phone-link data-phone>+91 70424 18698</a></li>
+          <li><a href="mailto:office@nexlegal.in">office@nexlegal.in</a></li>
+          <li><a href="mailto:partner.ms@nexlegal.in">partner.ms@nexlegal.in</a></li>
+          <li><a href="mailto:partner.ks@nexlegal.in">partner.ks@nexlegal.in</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#guides">Legal Guides</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><button type="button" class="footer-link" data-open="disclaimer">Disclaimer</button></li>
+          <li><button type="button" class="footer-link" data-open="privacy">Privacy Policy</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>This website is maintained for information only, in accordance with the rules of the Bar Council of India. It is not an advertisement or a solicitation of work.</p>
+      <p>&copy; <span id="year">2026</span> Nex Legal. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/917042418698" target="_blank" rel="noopener" aria-label="Message Nex Legal on WhatsApp" data-wa-link>
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2m0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2m4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3"/></svg>
+</a>
+
+<!-- Article reader -->
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-labelledby="readerTitle" hidden>
+  <article class="reader-panel">
+    <button class="reader-close" id="readerClose" aria-label="Close article">&times;</button>
+    <div class="card-meta" id="readerMeta"></div>
+    <h2 id="readerTitle"></h2>
+    <div class="reader-byline" id="readerByline"></div>
+    <div class="prose" id="readerBody"></div>
+    <div class="reader-foot">
+      <p id="readerSource" hidden></p>
+      <p>This article is for general information and is not legal advice.</p>
+      <div class="share-row">
+        <a id="shareWa" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
+        <a id="shareLi" href="#" target="_blank" rel="noopener">Share on LinkedIn</a>
+        <button type="button" id="copyLink">Copy link</button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<!-- BCI disclaimer (shown on entry) and policy modals -->
+<div class="modal" id="modal-disclaimer" role="dialog" aria-modal="true" aria-labelledby="discTitle" hidden>
+  <div class="modal-panel">
+    <img class="mark" src="assets/nex-monogram.png" alt="">
+    <h2 id="discTitle">Disclaimer</h2>
+    <div class="prose">
+      <p>The Bar Council of India does not permit advocates to solicit work or advertise. By clicking "I Agree" you acknowledge that:</p>
+      <ul>
+        <li>there has been no advertisement, personal communication, solicitation, invitation or inducement of any sort by Nex Legal or any of its members to solicit work through this website;</li>
+        <li>you wish to gain more information about Nex Legal for your own use;</li>
+        <li>the information on this website is not legal advice and should not be relied on as such;</li>
+        <li>using this website or sending information through it does not create an advocate-client relationship.</li>
+      </ul>
+      <p>Nex Legal is not liable for any action taken on the basis of the content of this website.</p>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-dark" id="agreeBtn" type="button">I Agree</button>
+      <a class="btn btn-plain" href="https://www.google.com" rel="noopener">Leave Site</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-privacy" role="dialog" aria-modal="true" aria-labelledby="privTitle" hidden>
+  <div class="modal-panel">
+    <h2 id="privTitle">Privacy Policy</h2>
+    <div class="prose">
+      <p>Nex Legal respects your privacy and handles personal data in line with the Digital Personal Data Protection Act, 2023.</p>
+      <h3>What we collect</h3>
+      <p>Only what you enter in our forms: your name, phone number, email address and the details you choose to share. We do not use advertising trackers on this website.</p>
+      <h3>How we use it</h3>
+      <p>To respond to your enquiry or application, to run a conflict check before we act, and to keep a record of our correspondence. We do not sell or share your details with anyone for marketing.</p>
+      <h3>Where it goes</h3>
+      <p>Form submissions are delivered to the firm's email through a form-processing service. Email and phone communication are subject to the providers' own security.</p>
+      <h3>Your rights</h3>
+      <p>You may ask us to access, correct or erase your personal data, or withdraw consent, by writing to office@nexlegal.in.</p>
+    </div>
+    <div class="modal-actions"><button class="btn btn-dark" type="button" data-close>Close</button></div>
+  </div>
+</div>
+
+<script src="content.js"></script>
+<script>
+(function(){
+  "use strict";
+  var NEX = window.NEX || {articles:[],videos:[],guides:[],partners:[],settings:{}};
+  var S = NEX.settings || {};
+  var $ = function(s,el){return (el||document).querySelector(s)};
+  var $$ = function(s,el){return Array.prototype.slice.call((el||document).querySelectorAll(s))};
+  var esc = function(t){return String(t==null?"":t).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
+  var fmtDate = function(d){var x=new Date(d+"T00:00:00");return isNaN(x)?esc(d):x.toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric"})};
+  var store = {get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
+  $("#year").textContent = new Date().getFullYear();
+
+  /* Contact settings */
+  if(S.phoneDisplay){$$("[data-phone]").forEach(function(el){el.textContent=S.phoneDisplay})}
+  if(S.phoneLink){$$("[data-phone-link]").forEach(function(el){el.href="tel:"+S.phoneLink})}
+  if(S.whatsapp){$$("[data-wa-link]").forEach(function(el){el.href="https://wa.me/"+S.whatsapp})}
+
+  /* Header */
+  var header=$("#header"), menuBtn=$("#menuBtn");
+  var onScroll=function(){header.classList.toggle("solid",window.scrollY>40||header.classList.contains("open"))};
+  window.addEventListener("scroll",onScroll,{passive:true}); onScroll();
+  menuBtn.addEventListener("click",function(){var o=header.classList.toggle("open");menuBtn.setAttribute("aria-expanded",o);onScroll()});
+  $$("#navLinks a").forEach(function(a){a.addEventListener("click",function(){header.classList.remove("open");menuBtn.setAttribute("aria-expanded","false");onScroll()})});
+
+  /* Partners */
+  $("#partnerGrid").innerHTML=(NEX.partners||[]).map(function(p){
+    return '<article class="partner"><div class="portrait">'+(p.photo?'<img src="'+esc(p.photo)+'" alt="'+esc(p.name)+'">':'<span>'+esc(p.initials)+'</span>')+'</div>'+
+      '<div class="partner-body"><p class="partner-role">'+esc(p.role)+'</p><h3>'+esc(p.name)+'</h3><p>'+esc(p.bio)+'</p>'+
+      '<div class="partner-meta">'+(p.enrolment?'<span>Enrolled: '+esc(p.enrolment)+'</span>':'')+(p.email?'<a href="mailto:'+esc(p.email)+'">'+esc(p.email)+'</a>':'')+'</div></div></article>';
+  }).join("");
+
+  /* Articles */
+  var articles=(NEX.articles||[]).slice().sort(function(a,b){return (b.date||"").localeCompare(a.date||"")});
+  var cats=["All"]; articles.forEach(function(a){[a.type,a.category].forEach(function(c){if(c&&cats.indexOf(c)<0)cats.push(c)})});
+  var current="All";
+  function renderFilters(){
+    $("#filters").innerHTML=cats.map(function(c){return '<button type="button" class="chip" aria-pressed="'+(c===current)+'" data-cat="'+esc(c)+'">'+esc(c)+'</button>'}).join("");
+    $("#filters").hidden=articles.length<2;
+  }
+  function renderArticles(){
+    var list=articles.filter(function(a){return current==="All"||a.type===current||a.category===current});
+    $("#articleGrid").innerHTML=list.length?list.map(function(a){
+      return '<button type="button" class="card" data-slug="'+esc(a.slug)+'"><div class="card-meta"><span class="type">'+esc(a.type||"Article")+'</span><span>'+esc(a.category||"")+'</span></div>'+
+        '<h3>'+esc(a.title)+'</h3><p>'+esc(a.summary)+'</p><span class="more">'+fmtDate(a.date)+(a.readTime?' &middot; '+esc(a.readTime):'')+'</span></button>';
+    }).join(""):'<p style="color:var(--ink-soft)">New articles will appear here soon.</p>';
+  }
+  renderFilters(); renderArticles();
+  $("#filters").addEventListener("click",function(e){var b=e.target.closest("[data-cat]");if(!b)return;current=b.getAttribute("data-cat");renderFilters();renderArticles()});
+  $("#articleGrid").addEventListener("click",function(e){var c=e.target.closest("[data-slug]");if(c)openArticle(c.getAttribute("data-slug"),true)});
+
+  var reader=$("#reader"), lastFocus=null;
+  function openArticle(slug,push){
+    var a=articles.filter(function(x){return x.slug===slug})[0]; if(!a)return;
+    lastFocus=document.activeElement;
+    $("#readerMeta").innerHTML='<span class="type">'+esc(a.type||"Article")+'</span><span>'+esc(a.category||"")+'</span>';
+    $("#readerTitle").textContent=a.title;
+    $("#readerByline").textContent=(a.author||"Nex Legal")+" · "+fmtDate(a.date).replace(/&amp;/g,"&")+(a.readTime?" · "+a.readTime:"");
+    $("#readerBody").innerHTML=a.body||"";
+    var src=$("#readerSource");
+    if(a.source&&a.source.url){src.hidden=false;src.innerHTML='Source: <a href="'+esc(a.source.url)+'" target="_blank" rel="noopener">'+esc(a.source.name||a.source.url)+'</a>'}else{src.hidden=true}
+    var url=location.origin+location.pathname+"#"+a.slug;
+    $("#shareWa").href="https://wa.me/?text="+encodeURIComponent(a.title+" "+url);
+    $("#shareLi").href="https://www.linkedin.com/sharing/share-offsite/?url="+encodeURIComponent(url);
+    $("#copyLink").onclick=function(){var b=this;var done=function(){b.textContent="Link copied"};if(navigator.clipboard){navigator.clipboard.writeText(url).then(done,function(){b.textContent=url})}else{b.textContent=url}};
+    reader.hidden=false; document.body.style.overflow="hidden"; reader.scrollTop=0; $("#readerClose").focus();
+    if(push){try{history.replaceState(null,"","#"+a.slug)}catch(e){}}
+  }
+  function closeArticle(){
+    reader.hidden=true; document.body.style.overflow="";
+    try{history.replaceState(null,"",location.pathname+"#insights")}catch(e){}
+    if(lastFocus)lastFocus.focus();
+  }
+  $("#readerClose").addEventListener("click",closeArticle);
+  reader.addEventListener("click",function(e){if(e.target===reader)closeArticle()});
+
+  /* Videos */
+  var vids=(NEX.videos||[]).filter(function(v){return v&&v.youtubeId});
+  var play='<svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>';
+  $("#videoArea").innerHTML=vids.length?'<div class="video-grid">'+vids.map(function(v){
+    return '<article class="video"><div class="video-frame"><button type="button" data-yt="'+esc(v.youtubeId)+'" aria-label="Play video: '+esc(v.title)+'"><img src="https://i.ytimg.com/vi/'+esc(v.youtubeId)+'/hqdefault.jpg" alt="" loading="lazy"><span class="play">'+play+'</span></button></div>'+
+      '<h3>'+esc(v.title)+'</h3>'+(v.description?'<p>'+esc(v.description)+'</p>':'')+'</article>';
+  }).join("")+'</div>':'<div class="video-empty"><span class="play-mark">'+play+'</span><div><h3>Video explainers are on their way</h3><p>Our partners are recording short videos on cheque bounce cases, property purchases, bail and family law. They will appear here as they are released.</p></div></div>';
+  $("#videoArea").addEventListener("click",function(e){
+    var b=e.target.closest("[data-yt]"); if(!b)return;
+    var f=document.createElement("iframe");
+    f.src="https://www.youtube-nocookie.com/embed/"+encodeURIComponent(b.getAttribute("data-yt"))+"?autoplay=1&rel=0";
+    f.title=b.getAttribute("aria-label"); f.allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"; f.allowFullscreen=true;
+    b.parentNode.replaceChild(f,b);
+  });
+
+  /* Guides */
+  var plus='<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 2v12M2 8h12"/></svg>';
+  $("#guideList").innerHTML=(NEX.guides||[]).map(function(g){
+    return '<details class="guide"><summary><div><h3>'+esc(g.title)+'</h3><span class="law">'+esc(g.law||"")+'</span></div><span class="toggle" aria-hidden="true">'+plus+'</span></summary>'+
+      '<ol>'+(g.steps||[]).map(function(s){return '<li><span>'+esc(s)+'</span></li>'}).join("")+'</ol></details>';
+  }).join("");
+
+  /* Forms → email (Web3Forms), with email-app fallback until a key is set */
+  var keyReady=S.web3formsKey&&!/^PASTE/i.test(S.web3formsKey);
+  function status(form,msg,kind){var s=$(".form-status",form);s.hidden=false;s.className="form-status "+(kind||"");s.textContent=msg}
+  $$("form.form").forEach(function(form){
+    form.addEventListener("submit",function(e){
+      e.preventDefault();
+      if(form.botcheck&&form.botcheck.value)return;
+      var bad=$$("[required]",form).filter(function(el){return el.type==="checkbox"?!el.checked:!el.value.trim()});
+      var email=$("input[type=email]",form);
+      if(email&&email.value&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value))bad.push(email);
+      if(bad.length){status(form,"Please complete the highlighted fields.","err");bad[0].focus();bad.forEach(function(el){el.style.borderColor="#A2302A"});return}
+      $$("input,select,textarea",form).forEach(function(el){el.style.borderColor=""});
+      var data={};$$("input,select,textarea",form).forEach(function(el){if(el.name&&el.name!=="botcheck"&&el.value)data[el.name]=el.type==="checkbox"?(el.checked?"Yes":"No"):el.value});
+      var subject=form.getAttribute("data-subject")+(data.name?" — "+data.name:"");
+      if(!keyReady){
+        var body=Object.keys(data).map(function(k){return k.replace(/_/g," ")+": "+data[k]}).join("\n");
+        location.href="mailto:"+(S.officeEmail||"office@nexlegal.in")+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+        status(form,"Your email app should open with the message filled in. If it does not, please write to "+(S.officeEmail||"office@nexlegal.in")+".","");
+        return;
+      }
+      var btn=$("button[type=submit]",form), label=btn.textContent;
+      btn.disabled=true; btn.textContent="Sending…";
+      var payload=Object.assign({access_key:S.web3formsKey,subject:subject,from_name:"Nex Legal website",replyto:data.email||""},data);
+      fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(payload)})
+        .then(function(r){return r.json()})
+        .then(function(j){
+          if(j&&j.success){form.reset();status(form,"Thank you. Your message has reached us and a partner will respond within one working day.","ok")}
+          else{throw new Error((j&&j.message)||"failed")}
+        })
+        .catch(function(){status(form,"Your message could not be sent. Please try again, or write to "+(S.officeEmail||"office@nexlegal.in")+" or call "+(S.phoneDisplay||"")+".","err")})
+        .then(function(){btn.disabled=false;btn.textContent=label});
+    });
+  });
+
+  /* Modals: BCI disclaimer on entry, privacy policy */
+  function openModal(id){var m=$("#modal-"+id);if(!m)return;m.hidden=false;document.body.style.overflow="hidden";var f=$("button",m);if(f)f.focus()}
+  function closeModal(m){m.hidden=true;if(reader.hidden)document.body.style.overflow=""}
+  $$("[data-open]").forEach(function(b){b.addEventListener("click",function(){openModal(b.getAttribute("data-open"))})});
+  $$(".modal [data-close]").forEach(function(b){b.addEventListener("click",function(){closeModal(b.closest(".modal"))})});
+  $("#agreeBtn").addEventListener("click",function(){store.set("nexlegal_disclaimer","agreed");closeModal($("#modal-disclaimer"))});
+  document.addEventListener("keydown",function(e){
+    if(e.key!=="Escape")return;
+    var p=$("#modal-privacy"); if(!p.hidden){closeModal(p);return}
+    if(!reader.hidden)closeArticle();
+  });
+  if(store.get("nexlegal_disclaimer")!=="agreed")openModal("disclaimer");
+
+  /* Deep link to an article: nexlegal.in/#slug */
+  var h=location.hash.replace("#","");
+  if(h&&articles.some(function(a){return a.slug===h})){
+    if(store.get("nexlegal_disclaimer")==="agreed")openArticle(h,false);
+    else $("#agreeBtn").addEventListener("click",function(){openArticle(h,false)},{once:true});
+  }
+})();
+</script>
+</body>
+</html>
