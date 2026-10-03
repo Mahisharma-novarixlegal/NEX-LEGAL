@@ -31,30 +31,30 @@ window.NEX = {
   },
 
   /* -------------------------------------------------------------------
-     2. PARTNERS
+     2. PARTNERS  (shown in this order, side by side as equals)
      photo: leave "" to show the monogram, or put a file name such as
-     "mahi.jpg" after uploading the photo to the repository.
-     enrolment: leave "" to hide the line.
-     email: leave "" to hide it; add e.g. "partner.ms@nexlegal.in" once that mailbox exists.
+     "kunal.jpg" after uploading the photo to the repository.
+     email: leave "" to hide it.
+     focus: short practice tags shown under the bio.
      ------------------------------------------------------------------- */
   partners: [
-    {
-      name: "Mahi Sharma",
-      role: "Partner",
-      initials: "MS",
-      photo: "",
-      email: "",
-      enrolment: "Bar Council of Delhi, D/4283/2024",
-      bio: "Mahi is an advocate enrolled with the Bar Council of Delhi and a member of the Delhi High Court Bar Association. Her practice spans the Supreme Court, the High Court of Delhi, the NCLT and NCLAT, the Debts Recovery Tribunals, the family courts and the district courts, across civil, criminal, commercial, regulatory, insolvency, arbitration, intellectual property and real estate litigation. She drafts extensively for matters before the Supreme Court."
-    },
     {
       name: "Kunal Singh",
       role: "Partner",
       initials: "KS",
       photo: "",
       email: "",
-      enrolment: "",
-      bio: "Kunal co-leads the firm and shares responsibility for its litigation and advisory mandates, client relationships and the supervision of the working teams that support each engagement."
+      bio: "Kunal Singh is an advocate enrolled with the Bar Council of Delhi and a member of the Delhi High Court Bar Association, with a practice devoted entirely to litigation. He regularly appears before the High Court of Delhi, the District Courts across Delhi and Delhi NCR, and various statutory tribunals, handling matters from first filing through trial and appeal. His work spans insurance litigation, criminal defence, and civil and commercial disputes, and includes drafting and arguing complex appellate filings, writ petitions and trial proceedings. He has represented insurance corporations, banking and financial institutions, corporate entities and individual litigants.",
+      focus: ["Insurance litigation", "Criminal defence", "Civil & commercial", "Writs & appeals", "Trials"]
+    },
+    {
+      name: "Mahi Sharma",
+      role: "Partner",
+      initials: "MS",
+      photo: "",
+      email: "",
+      bio: "Mahi Sharma is an advocate enrolled with the Bar Council of Delhi and a member of the Delhi High Court Bar Association. Her practice spans the Supreme Court of India, the High Court of Delhi, the NCLT and NCLAT, the Debts Recovery Tribunals, the family courts and the district courts, across civil, criminal, commercial, regulatory, insolvency, arbitration, intellectual property and real estate litigation. She drafts extensively for matters before the Supreme Court. She has represented a central public sector undertaking, statutory regulators, public sector banks and the Official Liquidator, as well as corporate entities and individual litigants.",
+      focus: ["Supreme Court practice", "Insolvency & recovery", "Regulatory", "Commercial & IP", "Real estate"]
     }
   ],
 

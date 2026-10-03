@@ -22,7 +22,7 @@
 :root{
   --maroon:#3A0A0B; --maroon-deep:#260506; --wine:#4E1213; --maroon-line:rgba(212,170,110,.22);
   --gold:#C99A5B; --gold-light:#E6C48E; --gold-ink:#8A6332;
-  --ivory:#FBF7F1; --paper:#F4EDE3; --ink:#241A19; --ink-soft:#5E5250; --rule:#E2D6C6;
+  --ivory:#FFFEFB; --paper:#F9F5EE; --ink:#221817; --ink-soft:#5A4F4C; --rule:#E7DCCB; --rule-gold:#D9BF94; --label:#7A1E1E;
   --on-dark:#F3E9DC; --on-dark-soft:#C9B8A6;
   --display:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
   --body:"Jost","Futura","Century Gothic","Segoe UI",sans-serif;
@@ -58,7 +58,11 @@ p{margin:0}
 
 /* ---------- Header ---------- */
 .site-header{position:fixed;inset:0 0 auto 0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .3s,box-shadow .3s}
-.site-header.solid{background:rgba(38,5,6,.96);box-shadow:0 1px 0 var(--maroon-line);backdrop-filter:blur(8px)}
+.site-header.solid{background:rgba(48,7,8,.97);box-shadow:0 3px 0 var(--gold),0 5px 0 var(--ivory),0 6px 0 var(--gold);backdrop-filter:blur(8px)}
+.lh-rule{height:6px;background:linear-gradient(var(--gold) 0 3px,var(--ivory) 3px 5px,var(--gold) 5px 6px);border:0;margin:0}
+.eyebrow{color:var(--label)!important}
+.dark .eyebrow{color:var(--gold)!important}
+.section-head{position:relative;padding-bottom:26px;border-bottom:1px solid var(--rule-gold)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:28px;height:76px;max-width:1280px}
 .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--gold-light)}
 .brand img{width:40px;height:auto}
@@ -105,11 +109,11 @@ p{margin:0}
 @media (max-width:860px){.firm-grid{grid-template-columns:1fr}.pillar{grid-template-columns:1fr;gap:8px}}
 
 /* ---------- Practice ---------- */
-.practice-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--maroon-line);border-left:1px solid var(--maroon-line)}
-.practice{padding:34px 30px 36px;border-right:1px solid var(--maroon-line);border-bottom:1px solid var(--maroon-line);display:grid;gap:12px;align-content:start;transition:background .3s}
-.practice:hover{background:rgba(201,154,91,.06)}
-.practice h3{font-size:25px;color:var(--gold-light)}
-.practice p{font-size:15.5px;color:var(--on-dark-soft);line-height:1.6}
+.practice-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule-gold);border-left:1px solid var(--rule-gold);background:#fff}
+.practice{padding:34px 30px 36px;border-right:1px solid var(--rule-gold);border-bottom:1px solid var(--rule-gold);display:grid;gap:12px;align-content:start;transition:background .3s}
+.practice:hover{background:var(--paper)}
+.practice h3{font-size:25px;color:var(--maroon)}
+.practice p{font-size:15.5px;color:var(--ink-soft);line-height:1.6}
 @media (max-width:960px){.practice-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:600px){.practice-grid{grid-template-columns:1fr}.practice{padding:28px 22px}}
 
@@ -122,11 +126,40 @@ p{margin:0}
 @media (max-width:560px){.forum-list{grid-template-columns:1fr}}
 
 /* ---------- Partners ---------- */
-.partner-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(28px,4vw,48px)}
-.partner{display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:start;min-width:0}
+.partner-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(24px,3vw,36px)}
+.partner{display:grid;grid-template-columns:140px 1fr;gap:28px;align-items:start;min-width:0;background:#fff;border:1px solid var(--rule-gold);padding:34px 32px 32px;box-shadow:inset 0 3px 0 var(--gold),inset 0 5px 0 #fff,inset 0 6px 0 var(--gold)}
+.focus{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;padding-top:16px;border-top:1px solid var(--rule)}
+.focus span{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--label);border:1px solid var(--rule-gold);padding:6px 10px}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:clamp(40px,5vw,56px);border-top:1px solid var(--rule-gold)}
+.team-role{padding:28px 28px 8px 0;display:grid;gap:10px;align-content:start}
+.team-role+.team-role{padding-left:28px;border-left:1px solid var(--rule)}
+.team-role h3{font-size:24px;color:var(--maroon)}
+.team-role p{font-size:15.5px;color:var(--ink-soft)}
+.label{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--label);font-weight:500}
+@media (max-width:860px){.team-grid{grid-template-columns:1fr}.team-role,.team-role+.team-role{padding:24px 0;border-left:0;border-bottom:1px solid var(--rule)}}
+/* glance strip */
+.glance{background:var(--ivory);border-bottom:1px solid var(--rule-gold)}
+.glance dl{margin:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.glance div{padding:30px 24px;display:grid;gap:6px;align-content:start}
+.glance div+div{border-left:1px solid var(--rule)}
+.glance dt{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--label);font-weight:500}
+.glance dd{margin:0;font-family:var(--display);font-size:22px;line-height:1.3;color:var(--ink)}
+@media (max-width:900px){.glance dl{grid-template-columns:1fr 1fr}.glance div:nth-child(3){border-left:0}.glance div:nth-child(n+3){border-top:1px solid var(--rule)}}
+@media (max-width:520px){.glance dl{grid-template-columns:1fr}.glance div+div{border-left:0;border-top:1px solid var(--rule)}.glance div{padding:20px 0}}
+/* how we work */
+.work-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(40px,6vw,80px);align-items:start}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;border-top:1px solid var(--rule-gold)}
+.steps li{counter-increment:s;display:grid;grid-template-columns:56px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid var(--rule)}
+.steps li::before{content:counter(s,upper-roman) '.';font-family:var(--display);font-size:24px;color:var(--gold-ink);line-height:1.2}
+.steps h3{font-size:23px;color:var(--maroon);margin-bottom:4px}
+.steps p{font-size:16px;color:var(--ink-soft)}
+.conduct{background:#fff;border:1px solid var(--rule-gold);padding:32px 30px;display:grid;gap:16px;box-shadow:inset 0 3px 0 var(--gold),inset 0 5px 0 #fff,inset 0 6px 0 var(--gold)}
+.conduct h3{font-size:26px;color:var(--maroon)}
+.conduct p{font-size:15.5px;color:var(--ink-soft)}
+@media (max-width:900px){.work-grid{grid-template-columns:1fr}}
 .portrait{aspect-ratio:4/5;width:100%;max-width:100%;background:linear-gradient(160deg,var(--wine),var(--maroon-deep));display:grid;place-items:center;overflow:hidden;position:relative}
 .portrait::after{content:"";position:absolute;inset:8px;border:1px solid rgba(201,154,91,.35);pointer-events:none}
-.portrait span{font-family:var(--display);font-size:46px;letter-spacing:.12em;color:var(--gold-light)}
+.portrait span{font-family:var(--display);font-size:42px;letter-spacing:.12em;color:var(--gold-light)}
 .portrait img{width:100%;height:100%;object-fit:cover}
 .partner-body{display:grid;gap:10px;min-width:0}
 .partner-body h3{font-size:32px;color:var(--maroon)}
@@ -136,7 +169,7 @@ p{margin:0}
 .partner-meta a{color:var(--maroon);text-decoration:none;border-bottom:1px solid var(--rule);overflow-wrap:anywhere}
 .team-note{margin-top:clamp(40px,5vw,56px);padding-top:28px;border-top:1px solid var(--rule);color:var(--ink-soft);max-width:80ch;font-size:16px}
 @media (max-width:960px){.partner-grid{grid-template-columns:1fr}}
-@media (max-width:520px){.partner{grid-template-columns:1fr}.portrait{max-width:200px}}
+@media (max-width:1100px){.partner{grid-template-columns:1fr}.portrait{max-width:150px}}
 
 /* ---------- Insights ---------- */
 .insights{background:var(--ivory)}
@@ -144,7 +177,7 @@ p{margin:0}
 .chip{min-height:40px;padding:0 18px;border:1px solid var(--rule);background:transparent;font:500 12px var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--maroon);border-color:var(--maroon);color:var(--gold-light)}
 .article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,32px)}
-.card{display:grid;grid-template-rows:auto auto 1fr auto;gap:14px;padding:30px 28px;background:#fff;border:1px solid var(--rule);text-align:left;font:inherit;color:inherit;cursor:pointer;transition:border-color .25s,transform .25s;min-width:0}
+.card{display:grid;grid-template-rows:auto auto 1fr auto;gap:14px;padding:30px 28px;background:#fff;border:1px solid var(--rule);box-shadow:inset 0 2px 0 var(--gold);text-align:left;font:inherit;color:inherit;cursor:pointer;transition:border-color .25s,transform .25s;min-width:0}
 .card:hover{border-color:var(--gold);transform:translateY(-3px)}
 .card-meta{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink)}
 .card-meta .type{color:var(--maroon);font-weight:500}
@@ -178,13 +211,13 @@ p{margin:0}
 .video-frame .play{position:absolute;width:64px;height:64px;border-radius:50%;background:rgba(38,5,6,.8);border:1px solid var(--gold);display:grid;place-items:center}
 .video-frame .play svg{width:22px;height:22px;fill:var(--gold-light);margin-left:4px}
 .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.video h3{font-size:23px;color:var(--gold-light)}
-.video p{font-size:15px;color:var(--on-dark-soft)}
-.video-empty{border:1px solid var(--maroon-line);padding:clamp(36px,6vw,64px);display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center}
+.video h3{font-size:23px;color:var(--maroon)}
+.video p{font-size:15px;color:var(--ink-soft)}
+.video-empty{background:#fff;border:1px solid var(--rule-gold);box-shadow:inset 0 3px 0 var(--gold);padding:clamp(36px,6vw,64px);display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center}
 .video-empty .play-mark{width:84px;height:84px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center}
-.video-empty .play-mark svg{width:28px;height:28px;fill:var(--gold);margin-left:5px}
-.video-empty h3{font-size:30px;color:var(--gold-light);margin-bottom:8px}
-.video-empty p{color:var(--on-dark-soft);max-width:60ch}
+.video-empty .play-mark svg{width:28px;height:28px;fill:var(--gold-ink);margin-left:5px}
+.video-empty h3{font-size:30px;color:var(--maroon);margin-bottom:8px}
+.video-empty p{color:var(--ink-soft);max-width:60ch}
 @media (max-width:960px){.video-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:620px){.video-grid{grid-template-columns:1fr}.video-empty{grid-template-columns:1fr}}
 
@@ -212,7 +245,7 @@ p{margin:0}
 .reach{display:grid;gap:10px;padding-top:26px;border-top:1px solid var(--rule)}
 .reach a{display:flex;gap:14px;align-items:center;text-decoration:none;color:var(--ink);font-size:17px;overflow-wrap:anywhere}
 .reach svg{flex:none;width:20px;height:20px;stroke:var(--gold-ink);fill:none;stroke-width:1.6}
-.form{display:grid;gap:18px;background:#fff;border:1px solid var(--rule);padding:clamp(24px,4vw,44px);min-width:0}
+.form{display:grid;gap:18px;background:#fff;border:1px solid var(--rule-gold);box-shadow:inset 0 3px 0 var(--gold),inset 0 5px 0 #fff,inset 0 6px 0 var(--gold);padding:clamp(24px,4vw,44px);min-width:0}
 .form h3{font-size:30px;color:var(--maroon)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .field{display:grid;gap:7px;min-width:0}
@@ -307,6 +340,19 @@ p{margin:0}
       </div>
     </div>
   </section>
+  <hr class="lh-rule">
+
+  <!-- AT A GLANCE -->
+  <section class="glance" aria-label="The firm at a glance">
+    <div class="wrap">
+      <dl>
+        <div><dt>Partners</dt><dd>Kunal Singh &middot; Mahi Sharma</dd></div>
+        <div><dt>Offices</dt><dd>Defence Colony &amp; Greater Kailash I, New Delhi</dd></div>
+        <div><dt>Practice</dt><dd>Litigation, arbitration &amp; advisory</dd></div>
+        <div><dt>Forums</dt><dd>Supreme Court, High Court of Delhi &amp; tribunals</dd></div>
+      </dl>
+    </div>
+  </section>
 
   <!-- FIRM -->
   <section class="section" id="firm">
@@ -316,7 +362,7 @@ p{margin:0}
         <h2>Where law meets strategy.</h2>
         <p class="lead">Nex Legal is led by its partners, Kunal Singh and Mahi Sharma. A partner reads every file, settles every strategy and remains answerable for every result.</p>
         <p>The firm operates from its head office in Defence Colony and its branch office in Greater Kailash I, both in South Delhi and within easy reach of the Supreme Court, the High Court of Delhi, the NCLT and NCLAT benches, the Debts Recovery Tribunals and the district courts at Saket and Patiala House. That lets us attend urgent mentions, inspect records and file at short notice.</p>
-        <p>Our partners and associates have acted for public institutions, regulators, lenders and liquidators, and for private parties in sensitive civil, family and criminal matters. Working on both sides helps us anticipate how the other side and the bench will view a case. In matters of significance we brief senior counsel of standing, always in consultation with the client.</p>
+        <p>The partners and associates of the firm have acted for public institutions, statutory regulators, insurance corporations, banks and financial institutions, liquidators and corporate entities, and for individual litigants in sensitive civil, family and criminal matters. Working on both sides helps us anticipate how the other side and the bench will view a case. In matters of significance we brief senior counsel of standing, always in consultation with the client.</p>
       </div>
       <div class="pillars">
         <div class="pillar"><h3><em>Law.</em></h3><p>We read the statute, the record and the precedent closely, and give advice in plain words that a client can act on.</p></div>
@@ -327,7 +373,7 @@ p{margin:0}
   </section>
 
   <!-- PRACTICE -->
-  <section class="section dark" id="practice">
+  <section class="section" id="practice" style="background:var(--paper)">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Practice Areas</p>
@@ -345,14 +391,14 @@ p{margin:0}
         <article class="practice"><h3>Criminal &amp; White Collar</h3><p>Anticipatory and regular bail, quashing petitions, complaints for cheating and criminal breach of trust, and trial representation.</p></article>
         <article class="practice"><h3>Family &amp; Matrimonial</h3><p>Divorce, maintenance, custody, domestic violence proceedings, stridhan recovery and transfer petitions before the Supreme Court.</p></article>
         <article class="practice"><h3>Employment &amp; Service</h3><p>Labour court and High Court proceedings on termination, wages and gratuity, and service matters including compassionate appointment.</p></article>
-        <article class="practice"><h3>Technology &amp; Data Protection</h3><p>Advice on the Digital Personal Data Protection Act, 2023, technology contracts and emerging questions of AI and the law.</p></article>
-        <article class="practice"><h3>Advisory &amp; Pre-Litigation</h3><p>Legal opinions, contract review, legal notices and replies, and pre-institution mediation under the Commercial Courts Act.</p></article>
+        <article class="practice"><h3>Insurance Litigation</h3><p>Motor accident claims, insurance recovery and repudiation disputes, and appeals before the High Court and the consumer commissions.</p></article>
+        <article class="practice"><h3>Advisory &amp; Data Protection</h3><p>Legal opinions, contract review, legal notices, pre-institution mediation, and advice under the Digital Personal Data Protection Act, 2023.</p></article>
       </div>
     </div>
   </section>
 
   <!-- FORUMS -->
-  <section class="section forums" id="forums">
+  <section class="section forums" id="forums" style="background:var(--ivory)">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Forums</p>
@@ -377,14 +423,47 @@ p{margin:0}
   </section>
 
   <!-- PARTNERS -->
-  <section class="section" id="partners">
+  <section class="section" id="partners" style="background:var(--paper)">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Partners</p>
-        <h2>The people answerable for your matter</h2>
+        <p class="eyebrow">Our People</p>
+        <h2>Partners</h2>
+        <p>Nex Legal is led by two equal partners. Every matter the firm accepts is assigned to a partner, who settles its strategy and remains the client's point of contact from the first brief to the final order.</p>
       </div>
       <div class="partner-grid" id="partnerGrid"></div>
-      <p class="team-note">The partners are supported by associates, research staff and paralegals who handle drafting, filing, registry work and record management.</p>
+      <div class="team-grid">
+        <div class="team-role"><p class="label">Associates</p><h3>Drafting &amp; Appearances</h3><p>Associates of the firm draft pleadings, applications and written submissions, appear on mentions and procedural hearings, and conduct trials under the supervision of a partner.</p></div>
+        <div class="team-role"><p class="label">Senior Counsel</p><h3>Briefed on Significant Matters</h3><p>In matters of significance the firm briefs senior counsel practising before the Supreme Court and the High Court of Delhi, always in consultation with the client and on fees agreed in advance.</p></div>
+        <div class="team-role"><p class="label">Research &amp; Registry</p><h3>Research, Filing &amp; Records</h3><p>The research team, paralegals and registry clerks handle legal research, paper books, filing and defect removal, listing, inspection of records and the firm's limitation diary.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="section" id="approach">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How We Work</p>
+        <h2>From the first brief to the final order</h2>
+        <p>The same standards apply to every engagement, whether it is a single hearing or a portfolio of matters.</p>
+      </div>
+      <div class="work-grid">
+        <ol class="steps">
+          <li><div><h3>The brief is received by a partner</h3><p>Every new matter is acknowledged within one working day, with the name of the responsible partner and associate.</p></div></li>
+          <li><div><h3>A preliminary assessment</h3><p>Within three working days we set out the merits, the risks, the likely timeline and the estimated costs. Urgent matters are assessed the same day.</p></div></li>
+          <li><div><h3>Drafts shared before filing</h3><p>Pleadings and applications are shared for the client's approval well before filing. Urgent filings are made within forty-eight hours of complete instructions.</p></div></li>
+          <li><div><h3>A report after every hearing</h3><p>On the day of each hearing the client receives a note of what transpired, the next date and any action required.</p></div></li>
+          <li><div><h3>Ongoing review</h3><p>Institutional clients receive a consolidated matter tracker every month and a review of their portfolio every quarter.</p></div></li>
+        </ol>
+        <aside class="conduct">
+          <p class="label">Professional Conduct</p>
+          <h3>Confidentiality and conflicts</h3>
+          <p>The firm practises in accordance with the Advocates Act, 1961 and the Bar Council of India Rules.</p>
+          <p>A conflict check is carried out before any mandate is accepted. Client information is held on access-controlled systems, shared only with the team working on the matter, and handled in line with the Digital Personal Data Protection Act, 2023.</p>
+          <p>The firm does not refer to any client or matter in publicity of any kind.</p>
+          <p>Out-of-pocket expenses are charged at actuals against receipts, and senior counsel fees are agreed with the client before any briefing.</p>
+        </aside>
+      </div>
     </div>
   </section>
 
@@ -402,7 +481,7 @@ p{margin:0}
   </section>
 
   <!-- VIDEOS -->
-  <section class="section dark" id="videos">
+  <section class="section" id="videos" style="background:var(--ivory)">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Videos</p>
@@ -530,6 +609,7 @@ p{margin:0}
   </section>
 </main>
 
+<hr class="lh-rule">
 <footer class="footer">
   <div class="wrap">
     <div class="footer-top">
@@ -566,7 +646,7 @@ p{margin:0}
     </div>
     <div class="footer-bottom">
       <p>This website is maintained for information only, in accordance with the rules of the Bar Council of India. It is not an advertisement or a solicitation of work.</p>
-      <p>&copy; <span id="year">2026</span> Nex Legal. All rights reserved.</p>
+      <p>&copy; 2023 Nex Legal. All rights reserved.</p>
     </div>
   </div>
 </footer>
@@ -647,7 +727,6 @@ p{margin:0}
   var fmtDate = function(d){var x=new Date(d+"T00:00:00");return isNaN(x)?esc(d):x.toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric"})};
   var store = {get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 
-  $("#year").textContent = new Date().getFullYear();
 
   /* Contact settings */
   if(S.phoneDisplay){$$("[data-phone]").forEach(function(el){el.textContent=S.phoneDisplay})}
@@ -665,7 +744,8 @@ p{margin:0}
   $("#partnerGrid").innerHTML=(NEX.partners||[]).map(function(p){
     return '<article class="partner"><div class="portrait">'+(p.photo?'<img src="'+esc(p.photo)+'" alt="'+esc(p.name)+'">':'<span>'+esc(p.initials)+'</span>')+'</div>'+
       '<div class="partner-body"><p class="partner-role">'+esc(p.role)+'</p><h3>'+esc(p.name)+'</h3><p>'+esc(p.bio)+'</p>'+
-      '<div class="partner-meta">'+(p.enrolment?'<span>Enrolled: '+esc(p.enrolment)+'</span>':'')+(p.email?'<a href="mailto:'+esc(p.email)+'">'+esc(p.email)+'</a>':'')+'</div></div></article>';
+      (p.focus&&p.focus.length?'<div class="focus">'+p.focus.map(function(f){return '<span>'+esc(f)+'</span>'}).join('')+'</div>':'')+
+      (p.email?'<div class="partner-meta"><a href="mailto:'+esc(p.email)+'">'+esc(p.email)+'</a></div>':'')+'</div></article>';
   }).join("");
 
   /* Articles */
