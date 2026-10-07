@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nex Legal | Advocates, New Delhi</title>
-<meta name="description" content="Nex Legal is a litigation and advisory firm in New Delhi, led by partners Kunal Singh and Mahi Sharma, appearing before the Supreme Court, the High Court of Delhi, NCLT, NCLAT, DRT and the courts of Delhi NCR.">
+<meta name="description" content="Nex Legal is a litigation and advisory firm in New Delhi, a team of advocates appearing before the Supreme Court, the High Court of Delhi, NCLT, NCLAT, DRT and the courts of Delhi NCR.">
 <meta name="theme-color" content="#3A0A0B">
 <link rel="canonical" href="https://nexlegal.in/">
 <link rel="icon" type="image/png" href="favicon.png">
@@ -14,6 +14,8 @@
 <meta property="og:description" content="Litigation and advisory firm in New Delhi. Supreme Court, High Court of Delhi, tribunals and the courts of Delhi NCR.">
 <meta property="og:url" content="https://nexlegal.in/">
 <meta property="og:image" content="https://nexlegal.in/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","name":"Nex Legal","url":"https://nexlegal.in/","logo":"https://nexlegal.in/nex-monogram.png","image":"https://nexlegal.in/og-image.jpg","email":"office@nexlegal.in","telephone":"+91-93546-72558","areaServed":"Delhi NCR, India","address":[{"@type":"PostalAddress","streetAddress":"A-62, First Floor, Defence Colony","addressLocality":"New Delhi","postalCode":"110024","addressCountry":"IN"},{"@type":"PostalAddress","streetAddress":"S-352, Third Floor, S Block, Greater Kailash I","addressLocality":"New Delhi","postalCode":"110048","addressCountry":"IN"}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
@@ -301,9 +303,36 @@ p{margin:0}
 .wa-menu a:hover{color:var(--maroon)}
 .wa-float{cursor:pointer;padding:0;width:56px;height:56px;border-radius:50%;background:var(--maroon);border:1px solid var(--gold);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
 .wa-float svg{width:26px;height:26px;fill:var(--gold-light)}
+
+/* ---------- Polish ---------- */
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:var(--gold);color:var(--maroon-deep);padding:12px 18px}
+.skip:focus{left:12px;top:12px}
+.lh-rule{height:6px;background:linear-gradient(var(--gold) 0 3px,var(--ivory) 3px 5px,var(--gold) 5px 6px);border:0;margin:0}
+.hero h1{filter:drop-shadow(0 2px 0 rgba(0,0,0,.25))}
+.hero-courts span{position:relative}
+.hero-courts span+span::before{content:"";position:absolute;left:-19px;top:50%;width:4px;height:4px;transform:translateY(-50%) rotate(45deg);background:var(--gold)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+.practice h3::before{content:"";display:block;width:28px;height:1px;background:var(--gold);margin-bottom:14px}
+.practice{border-top:2px solid transparent}
+.practice:hover{border-top-color:var(--gold)}
+.chain{display:grid;gap:0;position:relative}
+.tier{position:relative;padding:0 0 clamp(40px,5vw,60px) clamp(0px,5vw,64px)}
+.tier::before{content:"";position:absolute;left:19px;top:44px;bottom:0;width:1px;background:linear-gradient(var(--gold),var(--rule-gold))}
+.tier:last-child{padding-bottom:0}.tier:last-child::before{display:none}
+.tier-head{display:flex;align-items:center;gap:18px;margin-bottom:14px;margin-left:calc(-1*clamp(0px,5vw,64px))}
+.tier-head h3{font-size:clamp(28px,3.4vw,38px);color:var(--maroon)}
+.tier-no{flex:none;width:40px;height:40px;border:1px solid var(--gold);background:var(--ivory);display:grid;place-items:center;font-family:var(--display);font-size:20px;color:var(--gold-ink)}
+.tier-intro{color:var(--ink-soft);max-width:70ch;margin-bottom:26px}
+.tier .team-grid{margin-top:0}
+.tier .team-role:first-child{padding-left:0}
+@media (max-width:860px){.tier{padding-left:0}.tier::before{display:none}.tier-head{margin-left:0}}
+.form-status{scroll-margin-top:100px}
+.field input:invalid:not(:placeholder-shown):not(:focus){border-color:#A2302A}
 </style>
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 
 <header class="site-header" id="header">
   <div class="wrap nav">
@@ -314,7 +343,7 @@ p{margin:0}
     <ul class="nav-links" id="navLinks">
       <li><a href="#firm">Firm</a></li>
       <li><a href="#practice">Practice</a></li>
-      <li><a href="#partners">Team</a></li>
+      <li><a href="#team">Team</a></li>
       <li><a href="#insights">Insights</a></li>
       <li><a href="#videos">Videos</a></li>
       <li><a href="#guides">Guides</a></li>
@@ -335,13 +364,13 @@ p{margin:0}
       <h1>NEX LEGAL</h1>
       <p class="tagline">Law. Strategy. Resolution.</p>
       <hr class="rule-gold">
-      <p class="lede">A litigation and advisory firm in New Delhi, led by its dynamic team and present every day before the Supreme Court, the High Court of Delhi and the national tribunals.</p>
+      <p class="lede">A litigation and advisory firm in New Delhi. Our team of advocates is present every day before the Supreme Court, the High Court of Delhi and the national tribunals.</p>
       <div class="hero-actions">
-        <a class="btn btn-gold" href="#contact">Speak to a Partner</a>
+        <a class="btn btn-gold" href="#contact">Speak to the Team</a>
         <a class="btn btn-line" href="#practice">Our Practice</a>
       </div>
       <div class="hero-courts" aria-label="Forums">
-        <span>Supreme Court of India</span><span>High Court of Delhi</span><span>NCLT &amp; NCLAT</span><span>DRT &amp; DRAT</span><span>Consumer Commissions</span><span> White Collar Crimes</span><span> White Collar Crimes Courts of Delhi NCR</span>
+        <span>Supreme Court of India</span><span>High Court of Delhi</span><span>NCLT &amp; NCLAT</span><span>DRT &amp; DRAT</span><span>Consumer Commissions</span><span>White Collar Crime</span><span>Courts of Delhi NCR</span>
       </div>
     </div>
   </section>
@@ -351,7 +380,7 @@ p{margin:0}
   <section class="glance" aria-label="The firm at a glance">
     <div class="wrap">
       <dl>
-      
+        <div><dt>The Team</dt><dd>Partners, principal associates &amp; associates</dd></div>
         <div><dt>Offices</dt><dd>Defence Colony &amp; Greater Kailash I, New Delhi</dd></div>
         <div><dt>Practice</dt><dd>Litigation, arbitration &amp; advisory</dd></div>
         <div><dt>Forums</dt><dd>Supreme Court, High Court of Delhi &amp; tribunals</dd></div>
@@ -365,9 +394,9 @@ p{margin:0}
       <div class="firm-copy">
         <p class="eyebrow">The Firm</p>
         <h2>Where law meets strategy.</h2>
-        <p class="lead">Nex Legal is led by its dynamic team, here in Delhi spread out across the Country. A partner reads every file, settles every strategy with the team of associates and remains answerable for every result.</p>
+        <p class="lead">Nex Legal is a team. Every file is read by a partner, every strategy is settled together with the associates who will carry it, and the whole team remains answerable for every result.</p>
         <p>The firm operates from its head office in Defence Colony and its branch office in Greater Kailash I, both in South Delhi and within easy reach of the Supreme Court, the High Court of Delhi, the NCLT and NCLAT benches, the Debts Recovery Tribunals and the district courts at Saket and Patiala House. That lets us attend urgent mentions, inspect records and file at short notice.</p>
-        <p>The partners and associates of the firm have acted for public institutions, statutory regulators, insurance corporations, banks and financial institutions, liquidators and corporate entities, and for individual litigants in sensitive civil, family and criminal matters. Working on both sides helps us anticipate how the other side and the bench will view a case. In matters of significance we brief senior counsel of standing, always in consultation with the client.</p>
+        <p>The team has acted for public institutions, statutory regulators, insurance corporations, banks and financial institutions, liquidators and corporate entities, and for individual litigants in sensitive civil, family and criminal matters. Working on both sides helps us anticipate how the other side and the bench will view a case. In matters of significance we brief senior counsel of standing, always in consultation with the client.</p>
       </div>
       <div class="pillars">
         <div class="pillar"><h3><em>Law.</em></h3><p>We read the statute, the record and the precedent closely, and give advice in plain words that a client can act on.</p></div>
@@ -383,10 +412,10 @@ p{margin:0}
       <div class="section-head">
         <p class="eyebrow">Practice Areas</p>
         <h2>Counsel across the courts and tribunals of New Delhi</h2>
-        <p>Each area may be engaged on its own or as part of a wider mandate, with the same partner supervision throughout.</p>
+        <p>Each area may be engaged on its own or as part of a wider mandate, with the same partner supervision and team continuity throughout.</p>
       </div>
       <div class="practice-grid">
-        <article class="practice"><h3>Supreme Court &amp; Appellate</h3><p>Special leave petitions, civil and criminal appeals, transfer petitions and statutory appeals from tribunals such as the NCLT and NCLAT.</p></article>
+        <article class="practice"><h3>Supreme Court &amp; Appellate</h3><p>Special leave petitions, civil and criminal appeals, transfer petitions and statutory appeals from tribunals such as the NCLAT and APTEL.</p></article>
         <article class="practice"><h3>Commercial Litigation &amp; Arbitration</h3><p>Commercial suits, summary suits and injunctions; institutional and ad hoc arbitration, interim measures, challenges to awards and enforcement.</p></article>
         <article class="practice"><h3>Recovery, Enforcement &amp; Insolvency</h3><p>SARFAESI, DRT and DRAT proceedings, Section 138 complaints, execution of decrees, and creditor and debtor work before the NCLT and NCLAT.</p></article>
         <article class="practice"><h3>Consumer Protection</h3><p>Complaints and defence before the District, State and National Consumer Commissions, including product liability claims.</p></article>
@@ -427,19 +456,36 @@ p{margin:0}
     </div>
   </section>
 
-  <!-- PARTNERS -->
-  <section class="section" id="partners" style="background:var(--paper)">
+  <!-- TEAM -->
+  <section class="section" id="team" style="background:var(--paper)">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Our People</p>
-        <h2>Managing Partners</h2>
-        <p>Nex Legal is led by two equal partners. Every matter the firm accepts is assigned to a partner, who settles its strategy and remains the client's point of contact from the first brief to the final order.</p>
+        <p class="eyebrow">Our Team</p>
+        <h2>One team, from the first brief to the final order</h2>
+        <p>Nex Legal works as a single team. Each matter is led by a partner, run day to day by a principal associate, and carried through court by associates, research and registry. Clients deal with the whole team, not a single individual.</p>
       </div>
-      <div class="partner-grid" id="partnerGrid"></div>
-      <div class="team-grid">
-        <div class="team-role"><p class="label">Associates</p><h3>Drafting &amp; Appearances</h3><p>Associates of the firm draft pleadings, applications and written submissions, appear on mentions and procedural hearings, and conduct trials under the supervision of a partner.</p></div>
-        <div class="team-role"><p class="label">Senior Counsel</p><h3>Briefed on Significant Matters</h3><p>In matters of significance the firm briefs senior counsel practising before the Supreme Court and the High Court of Delhi, always in consultation with the client and on fees agreed in advance.</p></div>
-        <div class="team-role"><p class="label">Research &amp; Registry</p><h3>Research, Filing &amp; Records</h3><p>The research team, paralegals and registry clerks handle legal research, paper books, filing and defect removal, listing, inspection of records and the firm's limitation diary.</p></div>
+
+      <div class="chain">
+        <div class="tier">
+          <div class="tier-head"><span class="tier-no">I</span><div><p class="label">Tier One</p><h3>Partners</h3></div></div>
+          <p class="tier-intro">The partners set the strategy, settle every important draft, argue the significant hearings and answer for the outcome. Each matter has a partner assigned to it from the day it is accepted.</p>
+          <div class="partner-grid" id="partnerGrid"></div>
+        </div>
+
+        <div class="tier">
+          <div class="tier-head"><span class="tier-no">II</span><div><p class="label">Tier Two</p><h3>Principal Associates</h3></div></div>
+          <p class="tier-intro">Principal associates are the senior advocates of the team below the partners. They run matters day to day, lead the drafting, appear in the courts and tribunals, and are the client's first point of contact between hearings.</p>
+          <div class="partner-grid" id="paGrid"></div>
+        </div>
+
+        <div class="tier">
+          <div class="tier-head"><span class="tier-no">III</span><div><p class="label">Tier Three</p><h3>Associates &amp; Support</h3></div></div>
+          <div class="team-grid">
+            <div class="team-role"><p class="label">Associates</p><h3>Drafting &amp; Appearances</h3><p>Associates draft pleadings, applications and written submissions, appear on mentions and procedural hearings, and conduct trials under supervision.</p></div>
+            <div class="team-role"><p class="label">Senior Counsel</p><h3>Briefed on Significant Matters</h3><p>In matters of significance the team briefs senior counsel practising before the Supreme Court and the High Court of Delhi, in consultation with the client and on fees agreed in advance.</p></div>
+            <div class="team-role"><p class="label">Research &amp; Registry</p><h3>Research, Filing &amp; Records</h3><p>Researchers, paralegals and registry clerks handle legal research, paper books, filing and defect removal, listing, inspection of records and the firm's limitation diary.</p></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -454,7 +500,7 @@ p{margin:0}
       </div>
       <div class="work-grid">
         <ol class="steps">
-          <li><div><h3>The brief is received by a partner</h3><p>Every new matter is acknowledged within one working day, with the name of the responsible partner and associate.</p></div></li>
+          <li><div><h3>The brief is received by the team</h3><p>Every new matter is acknowledged within one working day, with the names of the responsible partner and associate.</p></div></li>
           <li><div><h3>A preliminary assessment</h3><p>Within three working days we set out the merits, the risks, the likely timeline and the estimated costs. Urgent matters are assessed the same day.</p></div></li>
           <li><div><h3>Drafts shared before filing</h3><p>Pleadings and applications are shared for the client's approval well before filing. Urgent filings are made within forty-eight hours of complete instructions.</p></div></li>
           <li><div><h3>A report after every hearing</h3><p>On the day of each hearing the client receives a note of what transpired, the next date and any action required.</p></div></li>
@@ -491,7 +537,7 @@ p{margin:0}
       <div class="section-head">
         <p class="eyebrow">Videos</p>
         <h2>The law, explained</h2>
-        <p>Short explainers from the partners on questions clients ask us most often.</p>
+        <p>Short explainers from the team on questions clients ask us most often.</p>
       </div>
       <div id="videoArea"></div>
     </div>
@@ -587,7 +633,7 @@ p{margin:0}
       <div class="section-head">
         <p class="eyebrow">Careers &amp; Internships</p>
         <h2>Train with us</h2>
-        <p>We take a small number of law students and young advocates each term. Interns work on live briefs, attend court with the partners and learn drafting from the ground up.</p>
+        <p>We take a small number of law students and young advocates each term. Interns work on live briefs, attend court with the team and learn drafting from the ground up.</p>
         <p>Share a link to your CV (Google Drive or similar, with access open) in the form, or email it to office@nexlegal.in.</p>
       </div>
       <form class="form" id="careerForm" novalidate data-subject="Internship or job application via nexlegal.in">
@@ -622,7 +668,7 @@ p{margin:0}
     <div class="footer-top">
       <div>
         <a class="brand" href="#top"><img src="nex-monogram.png" alt="" width="40" height="34"><span>NEX LEGAL</span></a>
-        <p>Law. Strategy. Resolution.<br>Partners: Kunal Singh &middot; Mahi Sharma</p>
+        <p>Law. Strategy. Resolution.<br>New Delhi, India</p>
       </div>
       <div>
         <h4>Offices</h4>
@@ -746,6 +792,12 @@ p{margin:0}
   waBtn.addEventListener("click",function(e){e.stopPropagation();waMenu.hidden=!waMenu.hidden;waBtn.setAttribute("aria-expanded",!waMenu.hidden)});
   document.addEventListener("click",function(e){if(!waMenu.hidden&&!e.target.closest("#waWrap")){waMenu.hidden=true;waBtn.setAttribute("aria-expanded","false")}});
 
+  /* Gentle reveal on scroll */
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target)}})},{threshold:.08});
+    $$(".section-head,.pillar,.practice,.partner,.tier,.steps li,.conduct,.card,.guide,.office,.form").forEach(function(el){el.classList.add("reveal");io.observe(el)});
+  }
+
   /* Header */
   var header=$("#header"), menuBtn=$("#menuBtn");
   var onScroll=function(){header.classList.toggle("solid",window.scrollY>40||header.classList.contains("open"))};
@@ -753,13 +805,17 @@ p{margin:0}
   menuBtn.addEventListener("click",function(){var o=header.classList.toggle("open");menuBtn.setAttribute("aria-expanded",o);onScroll()});
   $$("#navLinks a").forEach(function(a){a.addEventListener("click",function(){header.classList.remove("open");menuBtn.setAttribute("aria-expanded","false");onScroll()})});
 
-  /* Partners */
-  $("#partnerGrid").innerHTML=(NEX.partners||[]).map(function(p){
+  /* Team: partners and principal associates */
+  function person(p,tag){
     return '<article class="partner"><div class="portrait">'+(p.photo?'<img src="'+esc(p.photo)+'" alt="'+esc(p.name)+'">':'<span>'+esc(p.initials)+'</span>')+'</div>'+
-      '<div class="partner-body"><p class="partner-role">'+esc(p.role)+'</p><h3>'+esc(p.name)+'</h3><p>'+esc(p.bio)+'</p>'+
+      '<div class="partner-body"><p class="partner-role">'+esc(p.role||tag)+'</p><h3>'+esc(p.name)+'</h3><p>'+esc(p.bio)+'</p>'+
       (p.focus&&p.focus.length?'<div class="focus">'+p.focus.map(function(f){return '<span>'+esc(f)+'</span>'}).join('')+'</div>':'')+
       (p.email?'<div class="partner-meta"><a href="mailto:'+esc(p.email)+'">'+esc(p.email)+'</a></div>':'')+'</div></article>';
-  }).join("");
+  }
+  $("#partnerGrid").innerHTML=(NEX.partners||[]).map(function(p){return person(p,"Partner")}).join("");
+  var pas=NEX.principalAssociates||[];
+  if(pas.length){$("#paGrid").innerHTML=pas.map(function(p){return person(p,"Principal Associate")}).join("")}
+  else{$("#paGrid").remove()}
 
   /* Articles */
   var articles=(NEX.articles||[]).slice().sort(function(a,b){return (b.date||"").localeCompare(a.date||"")});
@@ -811,7 +867,7 @@ p{margin:0}
   $("#videoArea").innerHTML=vids.length?'<div class="video-grid">'+vids.map(function(v){
     return '<article class="video"><div class="video-frame"><button type="button" data-yt="'+esc(v.youtubeId)+'" aria-label="Play video: '+esc(v.title)+'"><img src="https://i.ytimg.com/vi/'+esc(v.youtubeId)+'/hqdefault.jpg" alt="" loading="lazy"><span class="play">'+play+'</span></button></div>'+
       '<h3>'+esc(v.title)+'</h3>'+(v.description?'<p>'+esc(v.description)+'</p>':'')+'</article>';
-  }).join("")+'</div>':'<div class="video-empty"><span class="play-mark">'+play+'</span><div><h3>Video explainers are on their way</h3><p>Our partners are recording short videos on cheque bounce cases, property purchases, bail and family law. They will appear here as they are released.</p></div></div>';
+  }).join("")+'</div>':'<div class="video-empty"><span class="play-mark">'+play+'</span><div><h3>Video explainers are on their way</h3><p>Our team is recording short videos on cheque bounce cases, property purchases, bail and family law. They will appear here as they are released.</p></div></div>';
   $("#videoArea").addEventListener("click",function(e){
     var b=e.target.closest("[data-yt]"); if(!b)return;
     var f=document.createElement("iframe");
@@ -853,7 +909,7 @@ p{margin:0}
       fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(payload)})
         .then(function(r){return r.json()})
         .then(function(j){
-          if(j&&j.success){form.reset();status(form,"Thank you. Your message has reached us and a partner will respond within one working day.","ok")}
+          if(j&&j.success){form.reset();status(form,"Thank you. Your message has reached us and our team will respond within one working day.","ok")}
           else{throw new Error((j&&j.message)||"failed")}
         })
         .catch(function(){status(form,"Your message could not be sent. Please try again, or write to "+(S.officeEmail||"office@nexlegal.in")+" or call "+(S.phoneDisplay||"")+".","err")})

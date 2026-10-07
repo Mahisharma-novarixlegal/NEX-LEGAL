@@ -17,10 +17,9 @@ window.NEX = {
 
   /* -------------------------------------------------------------------
      1. FORM SETTINGS
-     Get a free access key at https://web3forms.com (enter
-     office@nexlegal.in, they email you the key). Paste it below,
-     replacing the PASTE-... text. Until you do, the forms open the
-     visitor's email app with the message filled in instead.
+     Both forms (enquiry and careers) deliver to office@nexlegal.in
+     through Web3Forms using the access key below. The key is meant
+     to be public, so it is safe to keep in this file.
      ------------------------------------------------------------------- */
   settings: {
     web3formsKey: "71b662c0-79e2-43ad-b124-7a57ab277d36",
@@ -31,7 +30,7 @@ window.NEX = {
   },
 
   /* -------------------------------------------------------------------
-     2. PARTNERS  (shown in this order, side by side as equals)
+     2. PARTNERS  (shown only in the Team section, side by side as equals)
      photo: leave "" to show the monogram, or put a file name such as
      "kunal.jpg" after uploading the photo to the repository.
      email: leave "" to hide it.
@@ -57,6 +56,15 @@ window.NEX = {
       focus: ["Supreme Court practice", "Insolvency & recovery", "Regulatory", "Commercial & IP", "Real estate"]
     }
   ],
+
+  /* -------------------------------------------------------------------
+     2b. PRINCIPAL ASSOCIATES  (shown under the partners in the Team
+     section). While this list is empty only the role description is
+     shown. To add someone, copy the format of a partner above, e.g.
+       { name: "Full Name", role: "Principal Associate", initials: "FN",
+         photo: "", email: "", bio: "...", focus: ["...", "..."] },
+     ------------------------------------------------------------------- */
+  principalAssociates: [],
 
   /* -------------------------------------------------------------------
      3. ARTICLES  (newest first)
@@ -156,7 +164,7 @@ window.NEX = {
     //   youtubeId: "AbCdEf12345",
     //   title: "Cheque bounce cases explained in five minutes",
     //   date: "2026-10-10",
-    //   description: "Mahi Sharma walks through the Section 138 timeline."
+    //   description: "Our team walks through the Section 138 timeline."
     // },
   ],
 
